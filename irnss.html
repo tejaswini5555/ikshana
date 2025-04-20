@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IRNSS Overview</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+      font-size: 17px;
+      color: white;
+    }
+
+    /* Background video */
+    #myVideo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Navigation bar */
+    .navbar {
+      overflow: hidden;
+      background-color: rgb(13, 13, 13);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #faf9fd;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #fea50b;
+      color: rgb(33, 9, 155);
+    }
+
+    /* Footer credits */
+    .credits {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: right;
+      background: rgba(0, 0, 0, 0.3);
+      color: #f6f5fb;
+      padding: 5px 10px;
+      font-size: 14px;
+      z-index: 1;
+    }
+
+    /* Prevent content from being hidden under navbar */
+    body::before {
+      content: "";
+      display: block;
+      height: 50px; /* Adjust if navbar height changes */
+    }
+  </style>
+</head>
+<body>
+
+<!-- ✅ Background Video -->
+<video autoplay muted loop id="myVideo">
+  <source src="videos/InShot_20240713_112818308.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<!-- ✅ Navigation Bar (Gallery link removed) -->
+<div class="navbar">
+  <a class="active" href="aboutirnss.html">ABOUT IRNSS</a>
+  <a href="timelineofirnsssatellites.html">TIMELINE</a>
+  <a href="research.html">ONGOING RESEARCH</a>
+  <a href="stations.html">STATIONS AND INSTITUTES WORKING ON IRNSS</a>
+</div>
+
+<!-- ✅ Footer Credits -->
+<div class="credits">
+  <p>Information, pictures, and videos are courtesy of ISRO.</p>
+</div>
+
+</body>
+</html>
